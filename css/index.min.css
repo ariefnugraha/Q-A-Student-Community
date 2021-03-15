@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body {
+  margin: 0;
+  font: normal normal 400 16px/180% "Poppins", sans-serif;
+}
+
+body nav {
+  padding: 20px 80px;
+  background-color: #01497c;
+}
+
+body nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+body nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+body nav ul li:first-child {
+  margin-right: 50px;
+}
+
+body nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body nav ul li .logo {
+  display: inline;
+}
+
+body nav ul li .askquestion {
+  background-color: #fff;
+  color: #01497c;
+  padding: 10px;
+  font: normal normal 600 16px/180% "Poppins", sans-serif;
+  border-radius: 5px;
+}
+
+body nav ul li form {
+  display: inline;
+}
+
+body nav ul li form input {
+  height: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  border: none;
+  width: 500px;
+  outline: none;
+}
+
+body nav ul li:last-child {
+  margin-left: 50px;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 30px 200px;
+}
+
+body .container form {
+  width: 50%;
+}
+
+body .container form .title {
+  font: normal normal 600 31px/180% "Poppins", sans-serif;
+  color: #01497c;
+}
+
+body .container form .form-group input {
+  width: 100%;
+  height: 60px;
+  border: solid 1px #efefef;
+}
+
+body .container form .form-group input:first-child::before {
+  content: "usename";
+  font-size: 30px;
+  display: block;
+}
+
+body .container .illustration {
+  width: 50%;
+}
+/*# sourceMappingURL=index.min.css.map */
