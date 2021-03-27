@@ -1,0 +1,702 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body {
+  margin: 0;
+  font: normal normal 400 16px/180% "Poppins", sans-serif;
+}
+
+nav {
+  padding: 20px 80px;
+  background-color: #01497c;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:first-child {
+  margin-right: 50px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li .logo {
+  display: inline;
+}
+
+nav ul li .askquestion {
+  background-color: #fff;
+  color: #01497c;
+  padding: 10px;
+  font: normal normal 600 16px/180% "Poppins", sans-serif;
+  border-radius: 5px;
+}
+
+nav ul li form {
+  display: inline;
+}
+
+nav ul li form input {
+  height: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  border: none;
+  width: 500px;
+  outline: none;
+}
+
+nav ul li:last-child {
+  margin-left: 140px;
+}
+
+nav ul li.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+nav ul li.profile a {
+  margin-left: 20px;
+}
+
+nav ul li.profile a .image-container {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -10%;
+  top: -6%;
+}
+
+nav ul li.profile a .image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+nav .nav-mobile {
+  display: none;
+}
+
+footer {
+  padding: 40px;
+  background-color: #2a6f97;
+  color: #fff;
+}
+
+footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .menu .item {
+  width: 16.66%;
+  margin-right: 30px;
+}
+
+footer .menu .item:last-child {
+  margin-right: 0;
+}
+
+footer .menu .item a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .menu .item .logo-container {
+  width: 30px;
+  height: 30px;
+}
+
+footer .menu .item .logo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+footer .menu .item .address {
+  position: relative;
+  margin-left: 20px;
+}
+
+footer .menu .item .address::before {
+  content: "";
+  position: absolute;
+  left: -8%;
+  top: 12%;
+  width: 15px;
+  height: 15px;
+  background: url("../asset/map.svg") no-repeat;
+  display: block;
+}
+
+footer .menu .item .phone {
+  position: relative;
+  margin-left: 20px;
+}
+
+footer .menu .item .phone::before {
+  content: "";
+  position: absolute;
+  left: -8%;
+  top: 12%;
+  width: 15px;
+  height: 15px;
+  background: url("../asset/phone.svg") no-repeat;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  body {
+    font: normal normal 400 12px/180% "Poppins", sans-serif;
+  }
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 20px 0px;
+    z-index: 2;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .nav-mobile {
+    display: block;
+  }
+  nav .nav-mobile .logo {
+    display: inline-block;
+    margin: 0 30px;
+    width: 30px;
+    height: 30px;
+    background: url("../asset/logo-white.png") no-repeat;
+    background-size: contain;
+  }
+  nav .nav-mobile button {
+    float: right;
+    outline: none;
+    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+    background: url("../asset/menu-mobile-icon.svg") no-repeat center center;
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+  }
+  nav .nav-mobile ul {
+    display: block;
+    width: 0;
+    padding: 10px 20px;
+    position: absolute;
+    top: 100%;
+    right: -50%;
+    background-color: #fff;
+    z-index: 2;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  nav .nav-mobile ul li {
+    margin: 25px 0;
+    display: none;
+  }
+  nav .nav-mobile ul li:first-child {
+    margin-bottom: 25px;
+    margin-left: 30px;
+  }
+  nav .nav-mobile ul li:last-child {
+    margin-right: 0px;
+  }
+  nav .nav-mobile ul li.profile a .image-container {
+    top: -40%;
+  }
+  nav .nav-mobile ul li a {
+    color: #01497c;
+  }
+  nav .nav-mobile ul li .ask-question {
+    background-color: #01497c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font: normal normal 600 12px/180% "Poppins", sans-serif;
+  }
+  nav .nav-mobile ul li form {
+    position: relative;
+  }
+  nav .nav-mobile ul li form input {
+    width: 100%;
+    border: solid 1px #efefef;
+  }
+  nav .nav-mobile ul li form button {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    background: url("../asset/search-icon.svg") no-repeat center center;
+    background-size: 100% 100%;
+  }
+  footer .menu {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  footer .menu .item {
+    width: 45%;
+  }
+  footer .menu .item .address {
+    margin-left: 10px;
+  }
+  footer .menu .item .phone {
+    margin-left: 10px;
+  }
+  footer .menu .item .title {
+    font: normal normal 600 16px/180% "Poppins", sans-serif;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  nav {
+    padding: 20px 40px;
+  }
+  nav ul li:first-child {
+    margin-right: 20px;
+  }
+  nav ul li:last-child {
+    margin-left: 0px;
+  }
+  nav ul li form input {
+    width: 250px;
+  }
+  nav ul li.profile a {
+    margin-left: 50px;
+  }
+  nav ul li.profile a .image-container {
+    left: 0%;
+  }
+  footer .menu {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  footer .menu .item {
+    width: 48%;
+  }
+  footer .menu .item .address::before {
+    left: -4%;
+  }
+  footer .menu .item .phone::before {
+    left: -4%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  nav {
+    padding: 20px;
+  }
+  nav ul li.profile {
+    margin-left: 0px;
+  }
+  nav ul li.profile a {
+    margin-left: 40px;
+  }
+  nav ul li.profile a .image-container {
+    left: -2%;
+  }
+  nav ul li form input {
+    width: 400px;
+  }
+}
+
+body {
+  background-color: #efefef;
+}
+
+.container {
+  padding: 40px 80px;
+}
+
+.container .breadcrumb {
+  padding: 20px 40px;
+  font: normal normal 400 12px/180% "Poppins", sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container .breadcrumb a {
+  position: relative;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.container .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.container .breadcrumb a:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url("../asset/arrow-breadcrumb.svg") no-repeat;
+  display: block;
+  position: absolute;
+  top: 2%;
+  left: 115%;
+}
+
+.container .breadcrumb a:last-child {
+  background-color: red;
+}
+
+.container .breadcrumb p {
+  display: inline;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.container .content .question {
+  width: 65%;
+  margin-right: 30px;
+}
+
+.container .content .question article {
+  margin: 30px 0;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+}
+
+.container .content .question article .title {
+  font: normal normal 600 20px/180% "Poppins", sans-serif;
+}
+
+.container .content .question article .question-detail {
+  border-bottom: solid 1px #efefef;
+}
+
+.container .content .question article .info {
+  margin: 20px 0;
+}
+
+.container .content .question article .info .profile {
+  position: relative;
+  margin-top: 0px;
+  margin-left: 40px;
+  text-decoration: none;
+  font: normal normal 400 12px/180% "Poppins", sans-serif;
+}
+
+.container .content .question article .info .profile .profile-image {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.container .content .question article .info .profile .profile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .content .question article .info .time {
+  display: inline;
+  margin-left: 20px;
+  font: normal normal 400 12px/180% "Poppins", sans-serif;
+}
+
+.container .content .question article .buttons a {
+  padding: 10px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.container .content .question article .buttons .answer {
+  background-color: #2A9D8F;
+  color: #fff;
+}
+
+.container .content .question article .buttons .like {
+  color: #01497c;
+  border: solid 1px #01497c;
+}
+
+.container .content .question article .buttons .report {
+  padding-left: 10px;
+  color: #D62828;
+}
+
+.container .content .question .answer .title {
+  font: normal normal 600 20px/180% "Poppins", sans-serif;
+}
+
+.container .content .question .answer .answer-item {
+  padding: 30px 35px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.container .content .question .answer .answer-item .info .best-answer {
+  position: relative;
+  display: inline;
+  font: normal normal 600 20px/180% "Poppins", sans-serif;
+  color: #2A9D8F;
+  margin-left: 50px;
+}
+
+.container .content .question .answer .answer-item .info .best-answer::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: url("../asset/best-answer-badge.svg") no-repeat;
+  display: block;
+}
+
+.container .content .question .answer .answer-item .info .best-answer::after {
+  content: " by";
+  margin: 0 5px;
+  font: normal normal 400 12px/180% "Poppins", sans-serif;
+  color: #777777;
+}
+
+.container .content .question .answer .answer-item .info .profile {
+  font: normal normal 400 12px/180% "Poppins", sans-serif;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.container .content .question .answer .answer-item .info .profile:hover {
+  text-decoration: underline;
+}
+
+.container .content .question .answer .answer-item .info .profile .image-container {
+  position: relative;
+  top: 5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.container .content .question .answer .answer-item .info .profile .image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.container .content .question .answer .answer-item .info .time {
+  margin-left: 10px;
+  display: inline;
+  font: normal normal 400 12px/180% "Poppins", sans-serif;
+}
+
+.container .content .question .answer .answer-item .like {
+  display: inline-block;
+  padding: 10px;
+  border: solid 1px #2A9D8F;
+  color: #2A9D8F;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.container .content .question .answer #answer-box {
+  padding: 40px 35px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container .content .question .answer #answer-box .title {
+  font: normal normal 600 20px/180% "Poppins", sans-serif;
+  color: #01497c;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.container .content .question .answer #answer-box .subtitle {
+  width: 50%;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+}
+
+.container .content .question .answer #answer-box .submit {
+  margin: 20px 0;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #2A9D8F;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.container .content .sidebar {
+  width: 32.5%;
+}
+
+.container .content .sidebar .question-for-you {
+  margin-top: 30px;
+  padding: 35px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container .content .sidebar .question-for-you .title {
+  font: normal normal 600 16px/180% "Poppins", sans-serif;
+  color: #01497c;
+}
+
+.container .content .sidebar .question-for-you .question-item {
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #efefef;
+  color: #000;
+  text-decoration: none;
+}
+
+.container .content .sidebar .question-for-you .question-item:hover {
+  text-decoration: underline;
+}
+
+.container .content .sidebar .top-questions {
+  margin-top: 30px;
+  padding: 35px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container .content .sidebar .top-questions .title {
+  font: normal normal 600 16px/180% "Poppins", sans-serif;
+  color: #01497c;
+}
+
+.container .content .sidebar .top-questions .question-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  border-bottom: solid 1px #efefef;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.container .content .sidebar .top-questions .question-item .vote-score {
+  width: 10%;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.container .content .sidebar .top-questions .question-item .vote-score p {
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  font: normal normal 600 16px/180% "Poppins", sans-serif;
+  color: #01497c;
+}
+
+.container .content .sidebar .top-questions .question-item .question-detail {
+  width: 84.6%;
+}
+
+.container .content .sidebar .top-questions .question-item .question-detail a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container .content .sidebar .top-questions .question-item .question-detail a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .container .content .question {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 40px 20px !important;
+  }
+  .container .content .sidebar .top-questions .question-item .question-detail {
+    width: 80.6% !important;
+  }
+  footer .menu .item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    margin: 80px 0;
+    padding: 40px;
+  }
+  .container .content .question {
+    width: 100%;
+  }
+  .container .content .question article .buttons .report {
+    display: block;
+    margin-top: 20px;
+  }
+  .container .content .question .answer #answer-box .subtitle {
+    width: 100%;
+  }
+  .container .content .sidebar {
+    width: 100%;
+  }
+  .container .content .sidebar .top-questions .question-item .question-detail {
+    width: 82.6%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+  .container .content .sidebar {
+    width: 31.5%;
+  }
+  .container .content .sidebar .top-questions .question-item .question-detail {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=index.min.css.map */

@@ -4,12 +4,12 @@ body {
   font: normal normal 400 16px/180% "Poppins", sans-serif;
 }
 
-body nav {
+nav {
   padding: 20px 80px;
   background-color: #01497c;
 }
 
-body nav ul {
+nav ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,25 +27,25 @@ body nav ul {
           margin-block-end: 0;
 }
 
-body nav ul li {
+nav ul li {
   display: inline;
   margin-right: 20px;
 }
 
-body nav ul li:first-child {
+nav ul li:first-child {
   margin-right: 50px;
 }
 
-body nav ul li a {
+nav ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-body nav ul li .logo {
+nav ul li .logo {
   display: inline;
 }
 
-body nav ul li .askquestion {
+nav ul li .askquestion {
   background-color: #fff;
   color: #01497c;
   padding: 10px;
@@ -53,11 +53,11 @@ body nav ul li .askquestion {
   border-radius: 5px;
 }
 
-body nav ul li form {
+nav ul li form {
   display: inline;
 }
 
-body nav ul li form input {
+nav ul li form input {
   height: 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -67,11 +67,46 @@ body nav ul li form input {
   outline: none;
 }
 
-body nav ul li:last-child {
-  margin-left: 50px;
+nav ul li:last-child {
+  margin-left: 140px;
 }
 
-body .container {
+nav ul li.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+nav ul li.profile a {
+  margin-left: 20px;
+}
+
+nav ul li.profile a .image-container {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -10%;
+  top: -6%;
+}
+
+nav ul li.profile a .image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+nav .nav-mobile {
+  display: none;
+}
+
+footer {
+  padding: 40px;
+  background-color: #2a6f97;
+  color: #fff;
+}
+
+footer .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,23 +114,267 @@ body .container {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  padding: 30px 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-body .container form {
-  width: 50%;
+footer .menu .item {
+  width: 16.66%;
+  margin-right: 30px;
 }
 
-body .container form .title {
+footer .menu .item:last-child {
+  margin-right: 0;
+}
+
+footer .menu .item a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .menu .item .logo-container {
+  width: 30px;
+  height: 30px;
+}
+
+footer .menu .item .logo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+footer .menu .item .address {
+  position: relative;
+  margin-left: 20px;
+}
+
+footer .menu .item .address::before {
+  content: "";
+  position: absolute;
+  left: -8%;
+  top: 12%;
+  width: 15px;
+  height: 15px;
+  background: url("../asset/map.svg") no-repeat;
+  display: block;
+}
+
+footer .menu .item .phone {
+  position: relative;
+  margin-left: 20px;
+}
+
+footer .menu .item .phone::before {
+  content: "";
+  position: absolute;
+  left: -8%;
+  top: 12%;
+  width: 15px;
+  height: 15px;
+  background: url("../asset/phone.svg") no-repeat;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  body {
+    font: normal normal 400 12px/180% "Poppins", sans-serif;
+  }
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 20px 0px;
+    z-index: 2;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .nav-mobile {
+    display: block;
+  }
+  nav .nav-mobile .logo {
+    display: inline-block;
+    margin: 0 30px;
+    width: 30px;
+    height: 30px;
+    background: url("../asset/logo-white.png") no-repeat;
+    background-size: contain;
+  }
+  nav .nav-mobile button {
+    float: right;
+    outline: none;
+    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+    background: url("../asset/menu-mobile-icon.svg") no-repeat center center;
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+  }
+  nav .nav-mobile ul {
+    display: block;
+    width: 0;
+    padding: 10px 20px;
+    position: absolute;
+    top: 100%;
+    right: -50%;
+    background-color: #fff;
+    z-index: 2;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  nav .nav-mobile ul li {
+    margin: 25px 0;
+    display: none;
+  }
+  nav .nav-mobile ul li:first-child {
+    margin-bottom: 25px;
+    margin-left: 30px;
+  }
+  nav .nav-mobile ul li:last-child {
+    margin-right: 0px;
+  }
+  nav .nav-mobile ul li.profile a .image-container {
+    top: -40%;
+  }
+  nav .nav-mobile ul li a {
+    color: #01497c;
+  }
+  nav .nav-mobile ul li .ask-question {
+    background-color: #01497c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font: normal normal 600 12px/180% "Poppins", sans-serif;
+  }
+  nav .nav-mobile ul li form {
+    position: relative;
+  }
+  nav .nav-mobile ul li form input {
+    width: 100%;
+    border: solid 1px #efefef;
+  }
+  nav .nav-mobile ul li form button {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    background: url("../asset/search-icon.svg") no-repeat center center;
+    background-size: 100% 100%;
+  }
+  footer .menu {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  footer .menu .item {
+    width: 45%;
+  }
+  footer .menu .item .address {
+    margin-left: 10px;
+  }
+  footer .menu .item .phone {
+    margin-left: 10px;
+  }
+  footer .menu .item .title {
+    font: normal normal 600 16px/180% "Poppins", sans-serif;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  nav {
+    padding: 20px 40px;
+  }
+  nav ul li:first-child {
+    margin-right: 20px;
+  }
+  nav ul li:last-child {
+    margin-left: 0px;
+  }
+  nav ul li form input {
+    width: 250px;
+  }
+  nav ul li.profile a {
+    margin-left: 50px;
+  }
+  nav ul li.profile a .image-container {
+    left: 0%;
+  }
+  footer .menu {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  footer .menu .item {
+    width: 48%;
+  }
+  footer .menu .item .address::before {
+    left: -4%;
+  }
+  footer .menu .item .phone::before {
+    left: -4%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  nav {
+    padding: 20px;
+  }
+  nav ul li.profile {
+    margin-left: 0px;
+  }
+  nav ul li.profile a {
+    margin-left: 40px;
+  }
+  nav ul li.profile a .image-container {
+    left: -2%;
+  }
+  nav ul li form input {
+    width: 400px;
+  }
+}
+
+.title {
+  margin: 50px 200px 50px 200px;
   font: normal normal 600 31px/180% "Poppins", sans-serif;
   color: #01497c;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
 }
 
-body .container form .form-group {
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 0px 200px;
+}
+
+.container form {
+  width: 45%;
+  margin-right: 40px;
+}
+
+.container form .form-group {
   margin-bottom: 20px;
+  position: relative;
 }
 
-body .container form .form-group input {
+.container form .form-group .username-text,
+.container form .form-group .password-text {
+  background-color: #fff;
+  position: absolute;
+  top: -50%;
+  left: 5%;
+  color: #777777;
+}
+
+.container form .form-group input {
   width: 100%;
   height: 60px;
   border: solid 1px #efefef;
@@ -105,28 +384,72 @@ body .container form .form-group input {
   padding: 0 40px;
 }
 
-body .container form .form-group input:first-child::before {
-  content: "username";
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  font-size: 30px;
+.container form .form-group .submit {
   display: block;
-  position: absolute;
-}
-
-body .container form .form-group .submit {
-  display: block;
-  padding: 15px 70px;
+  padding: 15px 100px;
   border: none;
   border-radius: 8px;
   background-color: #014f86;
   font: normal normal 600 16px/180% "Poppins", sans-serif;
   color: #fff;
+  cursor: pointer;
   margin: 0 auto;
 }
 
-body .container .illustration {
-  width: 50%;
+.container form a {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container form p {
+  text-align: center;
+  color: #777777;
+}
+
+.container form .login-social a {
+  display: inline;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 70px;
+  border-radius: 8px;
+  font: normal normal 600 16px/180% "Poppins", sans-serif;
+}
+
+.container form .login-social .google {
+  background-color: #ea4335;
+}
+
+.container form .login-social .google::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 20%;
+  background: url("../asset/google.svg") no-repeat;
+}
+
+.container form .login-social .facebook {
+  background-color: #3b5998;
+}
+
+.container .illustration {
+  width: 51%;
+}
+
+.container .illustration .image {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container .illustration .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=login.min.css.map */
