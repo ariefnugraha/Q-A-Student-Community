@@ -1,127 +1,97 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
-$blue1: #01497c;
-$blue2: #014f86;
-$blue3: #2a6f97;
-$blue4: #2c7da0;
-$blue5: #468faf;
-$black: #000;
-$white: #fff;
-$gray1: #efefef;
-$gray2: #777777;
-$gray3: #e8e8e8;
-$heading1: normal normal 600 48px/180% "Poppins",
-sans-serif;
-$heading2: normal normal 600 39px/180% "Poppins",
-sans-serif;
-$heading3: normal normal 600 31px/180% "Poppins",
-sans-serif;
-$heading4: normal normal 600 25px/180% "Poppins",
-sans-serif;
-$heading5: normal normal 600 20px/180% "Poppins",
-sans-serif;
-$heading6: normal normal 600 16px/180% "Poppins",
-sans-serif;
-$heading7: normal normal 600 12px/180% "Poppins",
-sans-serif;
-$regular: normal normal 400 16px/180% "Poppins",
-sans-serif;
-$small: normal normal 400 12px/180% "Poppins",
-sans-serif;
-$extraSmall: normal normal 400 10px/180% "Poppins",
-sans-serif;
-body {
-    margin: 0;
-    font: $regular;
-    nav {
-        padding: 20px 80px;
-        background-color: $blue1;
-        ul {
-            list-style: none;
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            li {
+@import "style";
+.title {
+    margin: 50px 200px 50px 200px;
+    font: $heading3;
+    color: $blue1;
+    margin-block-end: 50px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0px 200px;
+    form {
+        width: 45%;
+        margin-right: 40px;
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+            .username-text,
+            .password-text {
+                background-color: $white;
+                position: absolute;
+                top: -50%;
+                left: 5%;
+                color: $gray2;
+            }
+            input {
+                width: 100%;
+                height: 60px;
+                border: solid 1px $gray1;
+                outline: none;
+                box-sizing: border-box;
+                padding: 0 40px;
+            }
+            .submit {
+                display: block;
+                padding: 15px 100px;
+                border: none;
+                border-radius: 8px;
+                background-color: $blue2;
+                font: $heading6;
+                color: $white;
+                cursor: pointer;
+                margin: 0 auto;
+            }
+        }
+        a {
+            text-decoration: none;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: #777777;
+        }
+        .login-social {
+            a {
                 display: inline;
-                margin-right: 20px;
-                &:first-child {
-                    margin-right: 50px;
+                position: relative;
+                color: $white;
+                text-decoration: none;
+                padding: 15px 70px;
+                border-radius: 8px;
+                font: $heading6;
+            }
+            .google {
+                background-color: #ea4335;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    left: 20%;
+                    background: url("../asset/google.svg") no-repeat;
                 }
-                a {
-                    color: $white;
-                    text-decoration: none;
-                }
-                .logo {
-                    display: inline;
-                }
-                .askquestion {
-                    background-color: $white;
-                    color: $blue1;
-                    padding: 10px;
-                    font: $heading6;
-                    border-radius: 5px;
-                }
-                form {
-                    display: inline;
-                    input {
-                        height: 45px;
-                        box-sizing: border-box;
-                        padding: 0 20px;
-                        border: none;
-                        width: 500px;
-                        outline: none;
-                    }
-                }
-                &:last-child {
-                    margin-left: 50px;
-                }
+            }
+            .facebook {
+                background-color: #3b5998;
             }
         }
     }
-    .container {
-        display: flex;
-        flex-flow: row wrap;
-        padding: 30px 200px;
-        form {
-            width: 50%;
-            .title {
-                font: $heading3;
-                color: $blue1;
+    .illustration {
+        width: 51%;
+        .image {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
-            .form-group {
-                margin-bottom: 20px;
-                input {
-                    width: 100%;
-                    height: 60px;
-                    border: solid 1px $gray1;
-                    outline: none;
-                    box-sizing: border-box;
-                    padding: 0 40px;
-                    &:first-child::before {
-                        content: "username";
-                        width: 100px;
-                        height: 100px;
-                        background-color: red;
-                        font-size: 30px;
-                        display: block;
-                        position: absolute;
-                    }
-                }
-                .submit {
-                    display: block;
-                    padding: 15px 70px;
-                    border: none;
-                    border-radius: 8px;
-                    background-color: $blue2;
-                    font: $heading6;
-                    color: $white;
-                    margin: 0 auto;
-                }
-            }
-        }
-        .illustration {
-            width: 50%;
         }
     }
 }
