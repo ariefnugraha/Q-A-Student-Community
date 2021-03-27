@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ask A Question Get An Answer</title>
+    <link rel="stylesheet" href="css/index.min.css">
 </head>
 
 <body>
@@ -27,8 +28,261 @@
                     <input type="text" placeholder="Find A Question" />
                 </form>
             </li>
+            <li class="profile">
+                <a href="#">
+                    <div class="image-container">
+                        <img src="asset/profile.png" alt="profile image">
+                    </div>
+                    Good Morning, <b>Cindy Hernandez</b>
+                </a>
+            </li>
         </ul>
+
+        <div class="nav-mobile">
+            <a class="logo"></a>
+            <button id="mobile-button" class="close"></button>
+            <ul class="dropdown">
+                <li class="profile">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="asset/profile.png" alt="profile image">
+                        </div>
+                        Good Morning, <b>Cindy Hernandez</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a class="ask-question" href="#">Ask Question</a>
+                </li>
+                <li>
+                    <form method="post">
+                        <input type="text" placeholder="Find A Question" required>
+                        <button type="submit"></button>
+                    </form>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+    <div class="container">
+        <section class="breadcrumb">
+            <a href="#">Home</a>
+            <a href="#">Design 1010</a>
+            <p>How do I scale in a layer style overlay greater than 150% in Photoshop while using the timeline?</p>
+        </section>
+
+        <section class="content">
+            <div class="question">
+                <article>
+                    <h1 class="title">How do I scale in a layer style overlay greater than 150% in Photoshop while using the timeline?</h1>
+
+                    <div class="question-detail">
+                        <p>This question shows research effort; it is useful and clear 0</p>
+                        <p>I was wondering how or why is there a hard limit to 150% scaling for any layer overlay that's available as I thought this could be anything over 1% in theory. Or is there a trick to get around this?
+                        </p>
+                        <p>Surely with the hardware available, this shouldn't be related to that.
+                        </p>
+                        <p>
+                            See attached of what I'm referring.</p>
+                        <p>EDIT My overall goal here is to animate the style and keyframe the scale. The answer by Luciano was ok for a different application but unfortunately, this doesn't work with the timeline AFAIK.
+                        </p>
+                    </div>
+
+                    <div class="info">
+                        <a class="profile" href="#">
+                            <div class="profile-image">
+                                <img src="asset/profile-question.jpg" alt="profile image">
+                            </div>
+                            Zahra Pangestu
+                        </a>
+                        <p class="time">1 hour ago</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="answer">Give Answer</a>
+                        <a href="#" class="like"><img src="asset/like.svg" alt="like icon"> 1500</a>
+                        <a href="#" class="report"><img src="asset/report.svg" alt="report icon"> Report this question</a>
+                    </div>
+                </article>
+
+                <section class="answer">
+                    <p class="title">3 Answers</p>
+                    <div class="answer-item">
+                        <div class="info">
+                            <p class="best-answer">Best Answer</p>
+                            <a class="profile" href="#">
+                                <div class="image-container">
+                                    <img src="asset/profile-answer-1.jpg" alt="Profile picture">
+                                </div>
+                                Natasya Firdaus
+                            </a>
+                            <p class="time">15 minute ago</p>
+                        </div>
+                        <div class="answer-content">
+                            <p>Create a vector shape (U) - it could be any shape, if it's going to be larger than the artboard or the layer below;
+                            </p>
+                            <p>Change the Fill to a gradient, keep Align with Layer checked;
+                            </p>
+                            <p>Transform (⌘+T) and scale the shape to the size you want;
+                            </p>
+                            <p>clip it to the layer below by holding ALT and clicking between the layer thumbnails;
+                            </p>
+                            <p>change opacity / blending mode / etc if necessary.</p>
+                        </div>
+                        <a class="like" href="#">
+                            <div class="icon-container ">
+                                <img src="asset/green-like.svg " alt="like icon "> 1402
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="answer-item">
+                        <div class="info">
+                            <a class="profile" href="#">
+                                <div class="image-container">
+                                    <img src="asset/profile-answer-2.jpg" alt="Profile picture">
+                                </div>
+                                Dina Hadinata
+                            </a>
+                            <p class="time">15 minute ago</p>
+                        </div>
+                        <div class="answer-content">
+                            <p>There're a lot of hard limitations like this in Photoshop: my best guess is Adobe is full of sadists. I don't know if it's possible to make scale of the layer style more than 150%, but creating a shape with a gradient, clipping
+                                it and then scaling would be my workaround</p>
+                        </div>
+                        <a class="like" href="#">
+                            <div class="icon-container ">
+                                <img src="asset/green-like.svg " alt="like icon "> 551
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="answer-item">
+                        <div class="info">
+                            <a class="profile" href="#">
+                                <div class="image-container">
+                                    <img src="asset/profile-answer-3.jpg" alt="Profile picture">
+                                </div>
+                                Kevin Dimas
+                            </a>
+                            <p class="time">15 minute ago</p>
+                        </div>
+                        <div class="answer-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci vulputate sit venenatis, volutpat. Tortor odio facilisis turpis sed. Est consectetur nisi, vulputate eget ut. Pharetra, turpis iaculis eleifend facilisi pellentesque
+                                urna in odio nulla. Lacus fames libero arcu integer. Nunc adipiscing sed elit blandit nunc mauris risus venenatis consectetur. Sit ut purus, maecenas nunc, malesuada diam id etiam. Pharetra non ullamcorper viverra blandit
+                                massa. Id aliquam nec sagittis, nulla varius enim vitae urna. Ridiculus nec rhoncus molestie tristique nunc. Aliquet sed.</p>
+                        </div>
+                        <a class="like" href="#">
+                            <div class="icon-container ">
+                                <img src="asset/green-like.svg " alt="like icon "> 202
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="answer-box">
+                        <p class="title">Let's Solve The Question</p>
+                        <p class="subtitle">Do you know the answer? Let’s solve this question by answer this question</p>
+                        <form method="post">
+                            <textarea id="answer-input"></textarea>
+                            <button class="submit" type="submit">Send Answer</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <aside class="sidebar ">
+                <section class="question-for-you">
+                    <p class="title">Questions For You</p>
+                    <a href="#" class="question-item">How to delete the first slice photoshop generated while using slice tool?</a>
+                    <a href="#" class="question-item">Display layer where luminosity is greater than fixed value</a>
+                    <a href="#" class="question-item">The diff between a shape layer and a layer with a vector mask when applying a gradient overlay layer style in photoshop CS 6?</a>
+                    <a href="#" class="question-item">Masking an image using a shape with layer style in Photoshop</a>
+                    <a href="#" class="question-item">Photoshop rasterize layer style</a>
+                </section>
+
+                <section class="top-questions">
+                    <p class="title">Top Questions </p>
+                    <div class="question-item">
+                        <div class="vote-score">
+                            <img src="asset/top-vote-question.svg" alt="top icon">
+                            <p>100</p>
+                        </div>
+                        <div class="question-detail">
+                            <a href='#'>How many ion thrusters would be needed to accelerate a 1000 tonne craft at 9.8m/s²?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <div class="vote-score">
+                            <img src="asset/top-vote-question.svg" alt="top icon">
+                            <p>58</p>
+                        </div>
+                        <div class="question-detail">
+                            <a href='#'>In Tolkien's universe, what happens if a Ring of Power is worn by a member of a race other than the one the ring was made for?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <div class="vote-score">
+                            <img src="asset/top-vote-question.svg" alt="top icon">
+                            <p>42</p>
+                        </div>
+                        <div class="question-detail">
+                            <a href='#'>A photon travels in a vacuum from A to B to C. From the point of view of the photon, are A, B, and C at the same location in space and time?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <div class="vote-score">
+                            <img src="asset/top-vote-question.svg" alt="top icon">
+                            <p>39</p>
+                        </div>
+                        <div class="question-detail">
+                            <a href='#'>Which was the first sci-fi story to feature power armors for military use?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <div class="vote-score">
+                            <img src="asset/top-vote-question.svg" alt="top icon">
+                            <p>24</p>
+                        </div>
+                        <div class="question-detail">
+                            <a href='#'>How do I scale in a layer style overlay greater than 150% in Photoshop while using the timeline?
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </section>
+    </div>
+
+    <footer>
+        <div class="menu">
+            <div class="item">
+                <div class="logo-container">
+                    <img src="asset/logo-white.png" alt="logo">
+
+                </div>
+                <p class="address">Taman Rumpun Bahagia 75300 Melaka</p>
+                <p class="phone">(505) 555-0125</p>
+            </div>
+            <div class="item">
+                <p class="title">Company</p>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Careers</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <!-- CALL TINYMCE -->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: "#answer-input"
+        })
+    </script>
 </body>
 
 </html>
