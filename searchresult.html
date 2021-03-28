@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/searchresult.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <div class="logo">
+                    <img src="asset/logo.png" alt="Logo">
+                </div>
+            </li>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a class="askquestion" href="#">Ask A Question</a>
+            </li>
+            <li>
+                <form method="post">
+                    <input type="text" placeholder="Find A Question" />
+                </form>
+            </li>
+            <li class="profile">
+                <a href="#">
+                    <div class="image-container">
+                        <img src="asset/profile.png" alt="profile image">
+                    </div>
+                    Good Morning, <b>Cindy Hernandez</b>
+                </a>
+            </li>
+        </ul>
+
+        <div class="nav-mobile">
+            <a class="logo"></a>
+            <button id="mobile-button" class="close"></button>
+            <ul class="dropdown">
+                <li class="profile">
+                    <a href="#">
+                        <div class="image-container">
+                            <img src="asset/profile.png" alt="profile image">
+                        </div>
+                        Good Morning, <b>Cindy Hernandez</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a class="ask-question" href="#">Ask Question</a>
+                </li>
+                <li>
+                    <form method="post">
+                        <input type="text" placeholder="Find A Question" required>
+                        <button type="submit"></button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="search-form">
+            <form method="post">
+                <input type="text" placeholder="Search Question" required />
+                <button type="submit"></button>
+            </form>
+        </section>
+        <div class="flex">
+            <aside>
+                <section class="sort">
+                    <p class="title">Sorts</p>
+                    <label class="item"> Date
+                        <input type="checkbox">
+                        <span class="new-checkbox"></span>
+                    </label>
+                </section>
+            </aside>
+            <div class="list-question">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
