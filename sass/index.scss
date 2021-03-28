@@ -327,7 +327,7 @@ body {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1600px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .container {
         .content {
             .sidebar {
@@ -336,6 +336,22 @@ body {
                     .question-item {
                         .question-detail {
                             width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .container {
+        .content {
+            .sidebar {
+                .top-questions {
+                    .question-item {
+                        .question-detail {
+                            width: 83.6%;
                         }
                     }
                 }
