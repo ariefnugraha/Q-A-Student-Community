@@ -107,9 +107,23 @@ nav {
 }
 
 footer {
+    position: relative;
+    margin-top: 100px;
     padding: 40px;
     background-color: $blue3;
     color: $white;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -16%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 40px;
+        background: url("../asset/footer-divider.png") no-repeat;
+        background-size: 100% 100%;
+        display: block;
+    }
     .menu {
         display: flex;
         flex-flow: row wrap;
@@ -119,6 +133,9 @@ footer {
             margin-right: 30px;
             &:last-child {
                 margin-right: 0;
+            }
+            .title {
+                font: $heading6;
             }
             a {
                 display: block;
