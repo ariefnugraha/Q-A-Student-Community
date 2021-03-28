@@ -101,9 +101,25 @@ nav .nav-mobile {
 }
 
 footer {
-  padding: 40px;
+  position: relative;
+  bottom: 0;
+  margin-top: 100px;
+  padding-top: 40px;
   background-color: #2a6f97;
   color: #fff;
+}
+
+footer:before {
+  content: "";
+  position: absolute;
+  top: -16%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40px;
+  background: url("../asset/footer-divider.png") no-repeat;
+  background-size: 100% 100%;
+  display: block;
 }
 
 footer .menu {
@@ -117,6 +133,7 @@ footer .menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 40px;
 }
 
 footer .menu .item {
@@ -128,10 +145,18 @@ footer .menu .item:last-child {
   margin-right: 0;
 }
 
+footer .menu .item .title {
+  font: normal normal 600 16px/180% "Poppins", sans-serif;
+}
+
 footer .menu .item a {
   display: block;
   color: #fff;
   text-decoration: none;
+}
+
+footer .menu .item a:hover {
+  text-decoration: underline;
 }
 
 footer .menu .item .logo-container {
@@ -174,6 +199,23 @@ footer .menu .item .phone::before {
   height: 15px;
   background: url("../asset/phone.svg") no-repeat;
   display: block;
+}
+
+.copyright {
+  padding: 2px 0;
+  text-align: center;
+  background-color: #468faf;
+  color: #fff;
+  font: normal normal 400 12px/180% "Poppins", sans-serif;
+}
+
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 991px) {
