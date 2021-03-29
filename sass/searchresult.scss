@@ -1,4 +1,4 @@
-@import './style';
+@import "./style";
 body {
     background-color: $gray1;
 }
@@ -35,22 +35,365 @@ body {
     .flex {
         display: flex;
         flex-flow: row wrap;
+        align-items: flex-start;
         margin-top: 40px;
         aside {
             width: 20%;
-            background-color: $white;
+            border-radius: 10px;
             .sort {
                 padding: 30px;
+                border-radius: 10px;
+                background-color: $white;
+                .title {
+                    font: $heading5;
+                    color: $blue1;
+                }
+                label {
+                    display: block;
+                    position: relative;
+                    margin-left: 30px;
+                    margin-bottom: 10px;
+                    &:hover {
+                        input~span {
+                            background-color: $blue1;
+                            transition: 0.5s;
+                        }
+                    }
+                    input {
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        opacity: 0;
+                        border-radius: 2px;
+                        cursor: pointer;
+                        &:checked~span {
+                            background-color: $blue1;
+                        }
+                    }
+                    span {
+                        position: absolute;
+                        top: 0%;
+                        left: -16%;
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        border: solid 1px $gray1;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 7px;
+                            left: 6px;
+                            width: 7px;
+                            height: 7px;
+                            border-radius: 50%;
+                            background: $white;
+                        }
+                    }
+                }
+            }
+            .filters {
+                margin: 20px 0;
+                padding: 30px;
+                background-color: $white;
                 border-radius: 10px;
                 .title {
                     font: $heading5;
                     color: $blue1;
                 }
+                p {
+                    font: $heading6;
+                }
+                label {
+                    display: block;
+                    position: relative;
+                    margin-left: 30px;
+                    margin-bottom: 10px;
+                    &:hover {
+                        input~span {
+                            background-color: $blue1;
+                            transition: 0.5s;
+                        }
+                    }
+                    &:last-child {
+                        span {
+                            top: 15%;
+                        }
+                    }
+                    input {
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        opacity: 0;
+                        cursor: pointer;
+                        &:checked~span {
+                            background-color: $blue1;
+                        }
+                    }
+                    span {
+                        position: absolute;
+                        top: 2%;
+                        left: -17%;
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                        border: solid 1px $gray1;
+                        cursor: pointer;
+                        &:after {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 2px;
+                            left: 6px;
+                            width: 6px;
+                            height: 8px;
+                            border: solid $white;
+                            border-width: 0 3px 3px 0;
+                            transform: rotate(45deg);
+                        }
+                    }
+                    input[type="text"] {
+                        position: static;
+                        width: 100%;
+                        height: 30px;
+                        border: solid 1px $gray1;
+                        opacity: 1;
+                    }
+                }
             }
         }
         .list-question {
-            width: 80%;
-            padding-left: 20px;
+            width: 74%;
+            margin-left: 20px;
+            padding: 40px 30px;
+            background-color: $white;
+            border-radius: 10px;
+            p:first-child {
+                margin-block-end: 0px;
+                span {
+                    font: $heading6;
+                    color: $blue1;
+                }
+            }
+            .result-amount {
+                margin-block-start: 0px;
+                font: $small;
+                color: $gray2;
+            }
+            .question-item {
+                margin: 10px 0;
+                padding-right: 300px;
+                padding-bottom: 20px;
+                border-bottom: solid 1px $gray1;
+                &:last-child {
+                    border-bottom: none;
+                }
+                h1 {
+                    font: $heading6;
+                    a {
+                        color: $black;
+                        text-decoration: none;
+                    }
+                }
+                .profile {
+                    position: relative;
+                    text-decoration: none;
+                    padding-left: 40px;
+                    color: $blue3;
+                    font: $small;
+                    .image {
+                        position: absolute;
+                        top: -30%;
+                        left: 0%;
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .date {
+                    display: inline-block;
+                    margin-left: 10px;
+                    font: $small;
+                    color: $gray2;
+                }
+                .list-button {
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    a {
+                        text-decoration: none;
+                        &.give-answer {
+                            background-color: $green;
+                            color: $white;
+                            padding: 10px;
+                            border-radius: 10px;
+                        }
+                        &.see-answer {
+                            border: solid 1px $green;
+                            color: $green;
+                            padding: 10px;
+                            border-radius: 10px;
+                        }
+                    }
+                    .like {
+                        padding: 10px;
+                        border: solid 1px $blue1;
+                        background: transparent;
+                        color: $blue1;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        .flex {
+            .list-question {
+                .question-item {
+                    .list-button {
+                        .like {
+                            display: block;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        .flex {
+            aside {
+                display: none;
+            }
+            .list-question {
+                width: 100%;
+                margin-left: 0%;
+                .question-item {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        .search-form {
+            form {
+                input {
+                    width: 93% !important;
+                }
+            }
+        }
+        .flex {
+            aside {
+                width: 30% !important;
+                .sort {
+                    label {
+                        span {
+                            left: -46% !important;
+                        }
+                    }
+                }
+                .filters {
+                    label {
+                        span {
+                            left: -30% !important;
+                        }
+                    }
+                }
+            }
+            .list-question {
+                width: calc(58% - 20px);
+                .question-item {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        .flex {
+            aside {
+                width: 30%;
+                .sort {
+                    label {
+                        span {
+                            left: -25%;
+                        }
+                    }
+                }
+                .filters {
+                    label {
+                        span {
+                            left: -25%;
+                        }
+                    }
+                }
+            }
+            .list-question {
+                width: calc(61% - 20px);
+                .question-item {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        margin-top: 80px;
+        padding: 40px 20px;
+        .search-form {
+            padding: 20px;
+            form {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+    .container {
+        .search-form {
+            form {
+                width: 70%;
+            }
+        }
+        .flex {
+            aside {
+                width: 30%;
+                .sort {
+                    label {
+                        span {
+                            left: -18%;
+                        }
+                    }
+                }
+            }
+            .list-question {
+                width: calc(63% - 20px);
+                .question-item {
+                    padding-right: 0;
+                }
+            }
         }
     }
 }
