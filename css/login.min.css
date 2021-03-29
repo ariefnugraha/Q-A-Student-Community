@@ -103,8 +103,8 @@ nav .nav-mobile {
 footer {
   position: relative;
   bottom: 0;
+  padding: 40px;
   margin-top: 100px;
-  padding-top: 40px;
   background-color: #2a6f97;
   color: #fff;
 }
@@ -112,7 +112,7 @@ footer {
 footer:before {
   content: "";
   position: absolute;
-  top: -16%;
+  top: -14%;
   left: 0;
   right: 0;
   width: 100%;
@@ -123,6 +123,8 @@ footer:before {
 }
 
 footer .menu {
+  width: 70%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,8 +179,8 @@ footer .menu .item .address {
 footer .menu .item .address::before {
   content: "";
   position: absolute;
-  left: -8%;
-  top: 12%;
+  left: -13%;
+  top: 8%;
   width: 15px;
   height: 15px;
   background: url("../asset/map.svg") no-repeat;
@@ -193,8 +195,8 @@ footer .menu .item .phone {
 footer .menu .item .phone::before {
   content: "";
   position: absolute;
-  left: -8%;
-  top: 12%;
+  left: -14%;
+  top: 24%;
   width: 15px;
   height: 15px;
   background: url("../asset/phone.svg") no-repeat;
@@ -216,6 +218,109 @@ footer .menu .item .phone::before {
 
 .copyright a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 325px) {
+  footer::before {
+    top: -7%;
+  }
+  footer .menu {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0;
+  }
+  footer .menu .item {
+    width: 43%;
+  }
+  footer .menu .item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 326px) and (max-width: 375px) {
+  .container {
+    margin-bottom: 20px !important;
+  }
+  footer {
+    margin-top: 50px;
+  }
+  footer:before {
+    top: -7% !important;
+  }
+  footer .menu {
+    width: 100%;
+    padding: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .menu .item {
+    width: calc(45% - 20px) !important;
+  }
+  footer .menu .item .address::before {
+    left: -17%;
+    top: 5%;
+  }
+  footer .menu .item .phone::before {
+    left: -18%;
+    top: 14%;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 575px) {
+  footer {
+    padding: 40px;
+  }
+  footer:before {
+    top: -8%;
+  }
+  footer .menu {
+    width: 100%;
+    padding: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .menu .item {
+    width: calc(47% - 20px);
+  }
+  footer .menu .item:nth-child(2n+2) {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  footer .menu {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 20px;
+  }
+  footer .menu .item {
+    width: 16.2%;
+  }
+  footer .menu .item .address::before {
+    left: -21%;
+  }
+  footer .menu .item .phone::before {
+    left: -21%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .menu {
+    width: 100%;
+    padding: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .menu .item {
+    width: 15.66%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -306,23 +411,6 @@ footer .menu .item .phone::before {
     background: url("../asset/search-icon.svg") no-repeat center center;
     background-size: 100% 100%;
   }
-  footer .menu {
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
-  }
-  footer .menu .item {
-    width: 45%;
-  }
-  footer .menu .item .address {
-    margin-left: 10px;
-  }
-  footer .menu .item .phone {
-    margin-left: 10px;
-  }
-  footer .menu .item .title {
-    font: normal normal 600 16px/180% "Poppins", sans-serif;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -345,18 +433,20 @@ footer .menu .item .phone::before {
     left: 0%;
   }
   footer .menu {
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0;
   }
   footer .menu .item {
-    width: 48%;
+    width: 17%;
   }
   footer .menu .item .address::before {
-    left: -4%;
+    left: -14%;
   }
   footer .menu .item .phone::before {
-    left: -4%;
+    left: -14%;
   }
 }
 
@@ -375,6 +465,10 @@ footer .menu .item .phone::before {
   }
   nav ul li form input {
     width: 400px;
+  }
+  footer .menu {
+    width: 100%;
+    padding: 0;
   }
 }
 
