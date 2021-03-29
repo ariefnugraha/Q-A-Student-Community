@@ -77,17 +77,219 @@
             <aside>
                 <section class="sort">
                     <p class="title">Sorts</p>
-                    <label class="item"> Date
-                        <input type="checkbox">
-                        <span class="new-checkbox"></span>
+                    <label> 
+                        <input type="radio" name="sort">
+                        <span></span>
+                        Date
                     </label>
+                    <label>
+                        <input type="radio" name="sort">
+                        <span></span>
+                        Like
+                    </label>
+                    <label>
+                        <input type="radio" name="sort">
+                        <span></span>
+                        Answer Votes
+                    </label>
+                </section>
+
+                <section class="filters">
+                    <p class="title">Filters</p>
+                    <div class="schools">
+                        <p>Schools</p>
+                        <label>
+                            <input type="checkbox" name="school">
+                            <span></span>
+                            Harvard
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school">
+                            <span></span>
+                            Oxford
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school">
+                            <span></span>
+                            Cambridge
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school">
+                            <span></span>
+                            <input type="text" placeholder="Others">
+                        </label>
+                    </div>
+                    <div class="study-programs">
+                        <p>Study Programs</p>
+                        <label>
+                            <input type="checkbox" name="program">
+                            <span></span>
+                            Engineering
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school">
+                            <span></span>
+                            Law
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school">
+                            <span></span>
+                            Medicine
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school">
+                            <span></span>
+                            <input type="text" placeholder="Others">
+                        </label>
+                    </div>
+
+                    <div class="subjects">
+                        <p>Subjects</p>
+                        <label>
+                            <input type="checkbox" name="subject">
+                            <span></span>
+                            Design
+                        </label>
+                        <label>
+                            <input type="checkbox" name="subject">
+                            <span></span>
+                            Math
+                        </label>
+                        <label>
+                            <input type="checkbox" name="subject">
+                            <span></span>
+                            Science
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school">
+                            <span></span>
+                            <input type="text" placeholder="Others">
+                        </label>
+                    </div>
                 </section>
             </aside>
             <div class="list-question">
+                <p>Results for <span>"Photoshop"</span></p>
+                <p class="result-amount">1000 Results</p>
 
+                <div class="question-item">
+                    <h1><a href="question.html" title="Import SVG as shape/path in Photoshop">Import SVG as shape/path in Photoshop</a></h1>
+                    <p>Is there a way to import an SVG into Photoshop and have it be treated as a shape/path? or perhaps converted to a shape/path so that it can be edited (e.g. manipulate its control points, change its ...</p>
+                    <a class="profile" href="#">
+                        <div class="image">
+                            <img src="asset/profile-answer-1.jpg" alt="profile">
+                        </div>
+                        Rika Widodo
+                    </a>
+                    <span class="date">20 October 2020</span>
+                    <div class="list-button">
+                        <a class="give-answer" href="question.html">Give Answer</a>
+                        <a class="see-answer" href="question.html">See Answer</a>
+                        <button class="like">
+                            <img src="asset/like.svg" alt="like icon"> 1500
+                        </button>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h1><a href="question.html" title="Import SVG as shape/path in Photoshop">cloning a selection in Photoshop with a rectangular marquee tool</a></h1>
+                    <p>I've come across a new feature to me, when I Ctrl - Alt click on a selection in a layer mask, it makes a copy of that selection and allows me to duplicate the contents of that selected area and move ...</p>
+                    <a class="profile" href="#">
+                        <div class="image">
+                            <img src="asset/profile.png" alt="profile">
+                        </div>
+                        Tania Hermawan
+                    </a>
+                    <span class="date">18 October 2020</span>
+                    <div class="list-button">
+                        <a class="give-answer" href="question.html">Give Answer</a>
+                        <a class="see-answer" href="question.html">See Answer</a>
+                        <button class="like">
+                            <img src="asset/like.svg" alt="like icon"> 29
+                        </button>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h1><a href="question.html" title="Import SVG as shape/path in Photoshop">Photoshop - Video Timeline Timecode units confusion</a></h1>
+                    <p>When a Video Timeline is created in Photoshop, there are 2 options for viewing time units: a Frame Number mode (which is pretty self-explanatory), and the Timecode mode, which I don't understand. ...</p>
+                    <a class="profile" href="#">
+                        <div class="image">
+                            <img src="asset/profile-answer-2.jpg" alt="profile">
+                        </div>
+                        Mutia Kristin Bella
+                    </a>
+                    <span class="date">17 October 2020</span>
+                    <div class="list-button">
+                        <a class="give-answer" href="question.html">Give Answer</a>
+                        <a class="see-answer" href="question.html">See Answer</a>
+                        <button class="like">
+                            <img src="asset/like.svg" alt="like icon"> 530
+                        </button>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h1><a href="question.html" title="Import SVG as shape/path in Photoshop">New to photoshop. looking for help/tutorials creating a UI</a></h1>
+                    <p>Like the title says, im fairly new to photoshop. Ive learnt a few things within the last few months just playing about by myself and using youtube videos for help. I wanted to learn how to use PS to ...</p>
+                    <a class="profile" href="#">
+                        <div class="image">
+                            <img src="asset/profile-answer-3.jpg" alt="profile">
+                        </div>
+                        Maulana Wahyu Yusuf
+                    </a>
+                    <span class="date">16 October 2020</span>
+                    <div class="list-button">
+                        <a class="give-answer" href="question.html">Give Answer</a>
+                        <a class="see-answer" href="question.html">See Answer</a>
+                        <button class="like">
+                            <img src="asset/like.svg" alt="like icon"> 349
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="menu">
+            <div class="item">
+                <div class="logo-container">
+                    <img src="asset/logo-white.png" alt="logo">
+
+                </div>
+                <p class="address">Taman Rumpun Bahagia 75300 Melaka</p>
+                <p class="phone">(505) 555-0125</p>
+            </div>
+            <div class="item">
+                <p class="title">Company</p>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="item">
+                <p class="title">Link</p>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+            <div class="item">
+                <p class="title">Link</p>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+            <div class="item">
+                <p class="title">Link</p>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p class="copyright">Copyright 2021 <a href="https://www.github.com/ariefnugraha" target="_blank">Muhammad Arief Nugraha</a></p>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
