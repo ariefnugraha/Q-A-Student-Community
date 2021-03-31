@@ -544,18 +544,23 @@ footer .menu .item .phone::before {
   color: #777777;
 }
 
+.container form .login-social {
+  text-align: center;
+}
+
 .container form .login-social a {
-  display: inline;
+  display: inline-block;
   position: relative;
   color: #fff;
   text-decoration: none;
-  padding: 15px 70px;
+  padding: 15px 40px;
   border-radius: 8px;
   font: normal normal 600 16px/180% "Poppins", sans-serif;
 }
 
 .container form .login-social .google {
   background-color: #ea4335;
+  padding-left: 55px;
 }
 
 .container form .login-social .google::before {
@@ -569,11 +574,24 @@ footer .menu .item .phone::before {
 }
 
 .container form .login-social .facebook {
+  margin: 0 auto;
   background-color: #3b5998;
+  padding-left: 55px;
+}
+
+.container form .login-social .facebook::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background: url("../asset/facebook.svg") no-repeat;
 }
 
 .container .illustration {
-  width: 51%;
+  width: 50%;
 }
 
 .container .illustration .image {
@@ -587,5 +605,96 @@ footer .menu .item .phone::before {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 325px) {
+  .container form .login-social a.google::before {
+    left: 25% !important;
+  }
+  .container form .login-social a.facebook::before {
+    left: 25% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    margin: 140px 0px 40px 40px;
+  }
+  .container {
+    margin-bottom: 40px;
+    padding: 0 40px;
+  }
+  .container form {
+    width: 100%;
+    margin-right: 0;
+  }
+  .container form .login-social {
+    text-align: center;
+  }
+  .container form .login-social a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .container form .login-social a.google:before {
+    left: 32%;
+  }
+  .container form .login-social a.facebook::before {
+    top: 30%;
+    left: 32%;
+  }
+}
+
+@media (max-width: 767px) {
+  .illustration {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .title {
+    margin: 120px 40px 40px 40px;
+  }
+  .container {
+    padding: 0 40px;
+  }
+  .container form .login-social a {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+  }
+  .container form .login-social a.google::before {
+    left: 20%;
+  }
+  .container form .login-social a.facebook::before {
+    left: 20%;
+  }
+  .container .illustration {
+    width: 49%;
+  }
+  .container .illustration .image img {
+    height: unset;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .title {
+    margin: 50px 80px;
+  }
+  .container {
+    padding: 0 80px;
+  }
+  .container form .login-social {
+    margin-top: 30px;
+  }
+  .container form .login-social a {
+    padding: 15px 61px;
+  }
+  .container form .login-social a.facebook::before {
+    top: 29%;
+    left: 22%;
+  }
+  .container .illustration {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=login.min.css.map */
