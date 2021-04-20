@@ -1,9 +1,3 @@
-<style>
-    .image-container {
-        display:flex;
-        flex-flow: row wrap;
-    }
-    </style>
 <h1>Q&A Student Community</h1>
 <div class="image-container">
     <img src="asset/question.jpeg">
