@@ -55,16 +55,28 @@ nav ul li .askquestion {
 
 nav ul li form {
   display: inline;
+  position: relative;
 }
 
 nav ul li form input {
   height: 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 70px 0 40px;
   border: none;
   width: 500px;
   outline: none;
+}
+
+nav ul li form button {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 nav ul li:last-child {
@@ -370,6 +382,8 @@ footer .menu .item .phone::before {
     z-index: 2;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
   nav .nav-mobile ul li {
     margin: 25px 0;
