@@ -25,4 +25,4 @@
 <p>If you want to clone or download this repo, plis give the star to this repo to support my work</p>
 <p>Open for work: <a href="mailto:muhammadariefnugraha77@gmail.com">muhammadariefnugraha77@gmail.com</a></p>
 <a href="https://www.facebook.com/muhammad.ariefnugraha">Facebook</a> | 
-<a href="https://www.linkedin.com/muhammadariefnugraha">Linkedin</a> | <a href="https://www.instagram.com/dvkentury">Instagram</a>
+<a href="https://www.linkedin.com/in/muhammad-arief-nugraha/">Linkedin</a> | <a href="https://www.instagram.com/dvkentury">Instagram</a>
