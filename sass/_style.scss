@@ -68,13 +68,23 @@ nav {
             }
             form {
                 display: inline;
+                position: relative;
                 input {
                     height: 45px;
                     box-sizing: border-box;
-                    padding: 0 20px;
+                    padding: 0 70px 0 40px;
                     border: none;
                     width: 500px;
                     outline: none;
+                }
+                button {
+                    position: absolute;
+                    right: 5%;
+                    top: 50%;
+                    transform: translateY(-40%);
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
                 }
             }
             &:last-child {
